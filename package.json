@@ -4,12 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test":  "cypress run --spec 'cypress/e2e/**/*.cy.js'",
-    "test:about": "cypress run --spec 'cypress/e2e/aboutus/**/*.cy.js'",
-    "test:home": "cypress run --spec 'cypress/e2e/homepage/**/*.cy.js'",
-    "test:admin": "cypress run --spec 'cypress/e2e/registerlogin/**/*.cy.js'",
-    "test:tablerow": "cypress run --spec 'cypress/e2e/table/**/*.cy.js'",
-    "test:radio": "cypress run --spec 'cypress/e2e/radio/**/*.cy.js'"
+    "test":  "npm run test:critical && npm run test:general",
+    "test:critical": "cypress run --spec 'cypress/e2e/critical/**/*.cy.js'",
+    "test:general": "cypress run --spec 'cypress/e2e/general/**/*.cy.js'"
   },
   "keywords": [],
   "author": "",
