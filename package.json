@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test":  "cypress run --spec 'cypress/e2e/**/*.cy.js'",
+    "test:about": "cypress run --spec 'cypress/e2e/aboutus/**/*.cy.js'",
+    "test:home": "cypress run --spec 'cypress/e2e/homepage/**/*.cy.js'",
+    "test:admin": "cypress run --spec 'cypress/e2e/registerlogin/**/*.cy.js'",
+    "test:tablerow": "cypress run --spec 'cypress/e2e/table/**/*.cy.js'",
+    "test:radio": "cypress run --spec 'cypress/e2e/radio/**/*.cy.js'"
   },
   "keywords": [],
   "author": "",
